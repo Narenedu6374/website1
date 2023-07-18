@@ -3,8 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
-  text-decoration: none;
-  list-style: none;
 }
 html,
 body {
@@ -17,21 +15,115 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 5px 5%;
-  background-color: #1876f2;
+  background-color: #0d1282;
 }
 .brand-name {
+  width: 25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .logo {
   width: 160px;
+  /* padding-right: 2.5rem; */
 }
-.socail li {
-  display: inline-block;
+.socail {
+  display: flex;
+  gap: 2.5rem;
   padding: 0 15px;
+  text-decoration: none;
+  list-style: none;
 }
 .socail li img {
   width: 28px;
   padding: 5px 0;
+}
+.nav-right {
+  display: flex;
+  width: min(45%, 30rem);
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 5px; */
+}
+.input-btn {
+  width: 100%;
+  min-width: 100px;
+  border-radius: 50px;
+  background-color: #fff;
+  /* background-color: #a1ccd1; */
+}
+.btn-search {
+  padding: 0 8px;
+  border-radius: 6px;
+}
+.profile {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-left: 10px;
+}
+
+/* start container */
+.container {
+  display: flex;
+  margin: 50px 0px 0px;
+}
+.left-side-bar {
+  width: 20%;
+  height: 100vh;
+}
+.lsidebar-link li {
+  list-style-type: none;
+  padding: 10px 0px;
+}
+.lsidebar-link li a {
+  text-decoration: none;
+  border: 1px soild #000;
+}
+.lside-image-content {
+  padding-left: 1.8rem;
+}
+.main-container {
+  width: 60%;
+}
+.user-profile {
+  display: flex;
+  justify-content: first baseline;
+  align-items: center;
+  margin-left: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  gap: 1rem;
+}
+.card {
+  margin-left: 20px;
+}
+.card .footer-card {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .footer-card .like-share-comment {
+  width: 750px;
+}
+.right-side-bar {
+  width: 18rem;
+  height: 100vh;
+}
+
+/* end container */
+/* footer */
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #0d1282;
+  text-align: center;
+}
+/* navbar */
+@media screen and (max-width: 628px) {
+  .socail {
+    display: none;
+  }
 }
